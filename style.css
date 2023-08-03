@@ -1,34 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body,
-input,
-textarea {
-    font-family: 'Roboto', sans-serif;
-}
-
-header h1,
-section h2,
-section h3 {
-    font-weight: normal;
-}
-
-header,
-section h2,
-section h3,
-form button {
-    font-family: 'Bungee', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    padding: 16px;
-    background-color: #182c61;
-    color: #ecf0f1;
+    padding: 15px;
+    background-color: rgb(17, 150, 14);
+    color: #ffff;
+}
+
+header button {
+    width: 130px;
+    height: 41px;
+    border-radius: 50px;
+    border: none;
+}
+
+.terceiroh {
+    width: 448;
+    font-weight: 500px;
+    font-size: 58px;
+    line-height: 70px;
 }
 
 header nav li {
@@ -72,18 +68,22 @@ section .container {
 }
 
 section {
-    padding: 24px 0;
-    color: #182c61;
-
+    padding: 100px;
+    color: #07462c;
 }
 
 section h2 {
-    margin-bottom: 16px;
+    width: 500px;
+    font-size: 50px;
+    line-height: 50px;
 
 }
 
 section p {
-    margin-top: 8px;
+    width: 500px;
+    font-size: 24px;
+    padding-bottom: 20px;
+    color: black;
 }
 
 .store_font {
@@ -97,19 +97,23 @@ section p {
 .social-links li {
     display: inline;
     margin-right: 8px;
+
 }
 
 .social-links li a {
     text-decoration: none;
-}
+    }
 
-#contact .container {
+#contact .container,
+#product .container {
     display: block;
 }
 
-.contact-methods {
+.contact-methods,
+.product_methods {
     display: flex;
     justify-content: space-between;
+    color: black;
 }
 
 form input,
@@ -127,11 +131,13 @@ form textarea {
 }
 
 section h3 {
-    margin-bottom: 16px;
+    margin: 24px 0 24px 0;
+    font-weight: 100px;
+
 }
 
 form button {
-    background-color: #182c61;
+    background-color: #073619;
     color: #ecf0f1;
     border: none;
     cursor: pointer;
@@ -139,17 +145,41 @@ form button {
 }
 
 form button:hover {
-    background-color: #3d59a3;
+    background-color: #3da37f;
 }
 
 input:focus,
 textarea:focus {
-    outline: #182c61;
+    outline: #2b938e;
 }
 
 footer {
-    background-color: #182c61;
+    background-color: #11960e;
     color: #ecf0f1;
     padding: 16px 0;
-    font-weight: bold;
+    font-weight: normal;
+    text-align: center;
+}
+
+.product_methods img {
+    height: 250px;
+    border-radius: 0 50px;
+}
+
+.product_methods button {
+    border: none;
+    margin-left: 50px;
+}
+
+.product_methods {
+    font-size: 30px;
+    font-weight: normal;
+    width: 400px;
+    padding-left: 15px;
+}
+#product{
+    background-color: #f5f5f2;
+}
+.product_methods button{
+    cursor: pointer;
 }
